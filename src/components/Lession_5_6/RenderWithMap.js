@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import IconComponent from './IconComponent';
-import {IconHaHa} from '../../assets/images/IconData';
-import {IconAngry} from '../../assets/images/IconData';
-import {IconCare} from '../../assets/images/IconData';
-import {IconLike} from '../../assets/images/IconData';
-import {IconLove} from '../../assets/images/IconData';
-import {IconSad} from '../../assets/images/IconData';
+import {IconHaHa} from '../../Data/Icon';
+import {IconAngry} from '../../Data/Icon';
+import {IconCare} from '../../Data/Icon';
+import {IconLike} from '../../Data/Icon';
+import {IconLove} from '../../Data/Icon';
+import {IconSad} from '../../Data/Icon';
 
 export default class RenderWithMap extends Component {
   constructor(props) {
@@ -28,11 +28,15 @@ export default class RenderWithMap extends Component {
         <Text style={styles.title}>Bạn đang cảm thấy như thế nào?</Text>
         <Image style={styles.image} source={this.state.urlIcon}></Image>
         <View style={styles.icon_menu}>
-            {this.arrayIcon.map((icon, index) => {
-                return (
-                    <IconComponent icon={icon} key={index} clickIcon={this.clickIconHandler}/>
-                )
-            })}
+          {this.arrayIcon.map((icon, index) => {
+            return (
+              <IconComponent
+                icon={icon}
+                key={index}
+                clickIcon={this.clickIconHandler}
+              />
+            );
+          })}
           {/* <IconComponent icon={IconHaHa} clickIcon={this.clickIconHandler} />
           <IconComponent icon={IconAngry} clickIcon={this.clickIconHandler} />
           <IconComponent icon={IconCare} clickIcon={this.clickIconHandler} />

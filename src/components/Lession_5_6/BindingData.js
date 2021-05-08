@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import gameData from '../../data/gameData';
+import gameData from '../../Data/gameData';
 
 export default class BindingData extends Component {
   renderGameData = () => {

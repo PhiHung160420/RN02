@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import IconComponent from './IconComponent';
-import {IconHaHa} from '../../assets/images/IconData';
-import {IconAngry} from '../../assets/images/IconData';
-import {IconCare} from '../../assets/images/IconData';
-import {IconLike} from '../../assets/images/IconData';
-import {IconLove} from '../../assets/images/IconData';
-import {IconSad} from '../../assets/images/IconData';
+import {IconHaHa} from '../../Data/Icon';
+import {IconAngry} from '../../Data/Icon';
+import {IconCare} from '../../Data/Icon';
+import {IconLike} from '../../Data/Icon';
+import {IconLove} from '../../Data/Icon';
+import {IconSad} from '../../Data/Icon';
 
 export default class IconWithState extends Component {
   constructor(props) {
