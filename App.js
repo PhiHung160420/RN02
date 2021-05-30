@@ -22,15 +22,13 @@ import {Provider} from 'react-redux';
 
 //Redux
 //import DemoRedux from './src/components/Lession_9_Redux/index';
-import store from './src/components/Lession_9_Redux/redux/store';
-import BaiTapRedux from './src/components/Lession_9_Redux/BaiTapRedux/index';
+//import store from './src/components/Lession_9_Redux/redux/store';
+//import BaiTapRedux from './src/components/Lession_9_Redux/BaiTapRedux/index';
+//import LifeCycle from './src/components/LifeCycle/index';
+import BaiTapLifeCycle from './src/components/LifeCycle/BaiTapLifeCycle';
 
 const App = () => {
-  return (
-    <Provider store={store}>
-      <BaiTapRedux />
-    </Provider>
-  );
+  return <BaiTapLifeCycle />;
 };
 
 export default App;

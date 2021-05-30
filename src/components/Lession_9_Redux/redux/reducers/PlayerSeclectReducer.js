@@ -8,7 +8,6 @@ const PlayerSelectReducer = (state = initialState, action) => {
   switch (action.type) {
     case PLAYER_SELECT:
       return {...state, playerSelect: action.selectedItem};
-
     default:
       return {...state};
   }
